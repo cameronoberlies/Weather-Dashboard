@@ -13,27 +13,33 @@
     />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="semantic/dist/semantic.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+      integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link href="assets/styles.css" rel="stylesheet" />
   </head>
   <body>
     <h1 class="ui header">Weather Dashboard</h1>
     <div class="container">
-     
-      <div>
+      <div class = "child1">
         <div class="ui search">
             <div class="ui icon input">
-              <input class="prompt" type="text" placeholder="Search By City">
+              <input id = 'userInput' class="prompt" type="text" placeholder="Search By City" />
               <i class="search icon"></i>
             </div>
             <div class="results"></div>
           </div>
-          <button class="fluid blue ui button">Search</button>
+          <button onclick = "returnText()" class="fluid blue ui button" id="searchBtn">Search</button>
+        </div>
+        <div class="card ui content"></div>
+        <div class="card ui content"></div>
+        <div class="card ui content"></div>
+        <div class="card ui content"></div>
+        <div class="card ui content"></div>
+        </div>
       </div>
-      
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -45,7 +51,12 @@
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"
     ></script>
-    <script src="semantic/dist/semantic.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+      integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="assets/script.js"></script>
   </body>
 </html>

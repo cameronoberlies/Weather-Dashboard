@@ -21,5 +21,16 @@
         max-width: 100%;
        min-height: 100%;
        color: black;
+       
+    
+}
+
+.child1 {
+    display: inline-block;
+}
+
+.ui.button {
+    margin: 10px;
+
     
 }
